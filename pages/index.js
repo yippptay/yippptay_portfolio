@@ -59,7 +59,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/takuya.jpg"
+              src="/images/profile.jpg"
               alt="Profile image"
               width="100"
               height="100"
@@ -171,7 +171,7 @@ const Home = () => (
 
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -186,9 +186,10 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
       </Section>
+
     </Container>
   </Layout>
 )

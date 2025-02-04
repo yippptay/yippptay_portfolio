@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbLAV from '../public/images/works/lavaporwholesale_eyecatch.jpg'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
 import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
@@ -22,12 +22,13 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="inkdrop" title="LA Vapor Wholesale" thumbnail={thumbLAV}>
+            A wholesale ecommerce website powered by Shopify.
           </WorkGridItem>
         </Section>
+
         <Section>
           <WorkGridItem
             id="walknote"
@@ -48,12 +49,14 @@ const Works = () => (
             painters like Van Gogh
           </WorkGridItem>
         </Section>
+
         <Section delay={0.1}>
           <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
             An app that suggests ramen(noodle) shops based on a given photo of
             the ramen you want to eat
           </WorkGridItem>
         </Section>
+        
       </SimpleGrid>
 
       <Section delay={0.2}>
