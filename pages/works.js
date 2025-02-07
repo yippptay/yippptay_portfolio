@@ -24,7 +24,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
 
         <Section>
-          <WorkGridItem id="inkdrop" title="LA Vapor Wholesale" thumbnail={thumbLAV}>
+          <WorkGridItem id="lav" title="LA Vapor Wholesale" thumbnail={thumbLAV}>
             A wholesale ecommerce website powered by Shopify.
           </WorkGridItem>
         </Section>

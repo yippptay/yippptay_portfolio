@@ -12,37 +12,46 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="LA Vapor Wholesale">
     <Container>
       <Title>
-        Inkdrop <Badge>2016-</Badge>
+        LA Vapor Wholesale <Badge>2022-2024</Badge>
       </Title>
       <P>
-        A Markdown note-taking app with 100+ plugins, cross-platform and
-        encrypted data sync support. The life-time revenue is more than $300k.
+        A wholesale ecommerce
       </P>
       <List ml={4} my={4}>
+
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.inkdrop.app/">
-            https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://lavaporwholesale.com">
+            https://lavaporwholesale.com/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
-        <ListItem>
+
+        {/* <ListItem>
           <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux/iOS/Android</span>
-        </ListItem>
+          <span>Windows</span>
+        </ListItem> */}
+
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>NodeJS, Electron, React Native</span>
+          <Meta>Technologies</Meta>
+          <span>Shopify, Shopify Admin,Shopify CLI</span>
         </ListItem>
+
         <ListItem>
+          <Meta>Languages</Meta>
+          <span>Liquid HTML, HTML, CSS, JavaScript, GraphQL, Shopify API</span>
+        </ListItem>
+
+        {/* <ListItem>
           <Meta>Blogpost</Meta>
           <Link href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">
             How I’ve Attracted The First 500 Paid Users For My SaaS That Costs
             $5/mo <ExternalLinkIcon mx="2px" />
           </Link>
-        </ListItem>
+        </ListItem> */}
+
       </List>
 
       <WorkImage src="/images/works/inkdrop_01.png" alt="Inkdrop" />
