@@ -15,20 +15,17 @@ import {
     <Layout title="AeroWerkZ">
       <Container>
         <Title>
-          Aerowerkz <Badge>2022-2024</Badge>
+          Aerowerkz <Badge>2018-2022</Badge>
         </Title>
         <P>
-        LA Vapor is one of the nation's leading wholesale distributors of electronic cigarettes 
-        and vaporizers with top-tier products. We offer a vast variety of e-cigs, box mods, 
-        vape kits, hardware, pod systems, and disposables. Additionally, we provide the latest 
-        devices, accessories, alternatives, and vaping gear essentials to our clients.
+        Car detailing shop specializing in PPF , ceramic coatings, and vinyl wraps.
         </P>
         <List ml={4} my={4}>
   
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://lavaporwholesale.com">
-              https://lavaporwholesale.com/ <ExternalLinkIcon mx="2px" />
+            <Link href="https://www.aerowerkz.com/index.html">
+                https://www.aerowerkz.com/index.html <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
   
@@ -39,12 +36,12 @@ import {
   
           <ListItem>
             <Meta>Technologies</Meta>
-            <span>Shopify, Shopify Admin, Shopify CLI</span>
+            <span>Wordpress</span>
           </ListItem>
   
           <ListItem>
             <Meta>Languages</Meta>
-            <span>Liquid HTML, HTML, CSS, JavaScript, GraphQL, Shopify API</span>
+            <span>HTML, CSS, JavaScript, PHP, MySQL</span>
           </ListItem>
   
           {/* <ListItem>
@@ -57,9 +54,10 @@ import {
   
         </List>
   
-        <WorkImage src="/images/works/lavaporwholesale_03.png" alt="Lavapor" />
-        <WorkImage src="/images/works/lavaporwholesale_02.png" alt="Lavapor" />
-        <WorkImage src="/images/works/lavaporwholesale_01.png" alt="Lavapor" />
+        <WorkImage src="/images/works/aerowerkz_03.png" alt="Aerowerkz" />
+        <WorkImage src="/images/works/aerowerkz_01.png" alt="Aerowerkz" />
+        <WorkImage src="/images/works/aerowerkz_02.png" alt="Aerowerkz" />
+
   
         {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
           <iframe
