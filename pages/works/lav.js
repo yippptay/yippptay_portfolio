@@ -18,7 +18,10 @@ const Work = () => (
         LA Vapor Wholesale <Badge>2022-2024</Badge>
       </Title>
       <P>
-        A wholesale ecommerce
+      LA Vapor is one of the nation's leading wholesale distributors of electronic cigarettes 
+      and vaporizers with top-tier products. We offer a vast variety of e-cigs, box mods, 
+      vape kits, hardware, pod systems, and disposables. Additionally, we provide the latest 
+      devices, accessories, alternatives, and vaping gear essentials to our clients.
       </P>
       <List ml={4} my={4}>
 
@@ -36,7 +39,7 @@ const Work = () => (
 
         <ListItem>
           <Meta>Technologies</Meta>
-          <span>Shopify, Shopify Admin,Shopify CLI</span>
+          <span>Shopify, Shopify Admin, Shopify CLI</span>
         </ListItem>
 
         <ListItem>
@@ -54,9 +57,11 @@ const Work = () => (
 
       </List>
 
-      <WorkImage src="/images/works/inkdrop_01.png" alt="Inkdrop" />
-      <WorkImage src="/images/works/inkdrop_02.png" alt="Inkdrop" />
-      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+      <WorkImage src="/images/works/lavaporwholesale_03.png" alt="Lavapor" />
+      <WorkImage src="/images/works/lavaporwholesale_02.png" alt="Lavapor" />
+      <WorkImage src="/images/works/lavaporwholesale_01.png" alt="Lavapor" />
+
+      {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe
           src="https://www.youtube.com/embed/-qBavwqc_mY"
           title="YouTube video player"
@@ -64,7 +69,8 @@ const Work = () => (
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-      </AspectRatio>
+      </AspectRatio> */}
+
     </Container>
   </Layout>
 )
