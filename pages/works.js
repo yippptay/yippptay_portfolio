@@ -29,7 +29,7 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
-        <Section>
+        {/* <Section>
           <WorkGridItem
             id="walknote"
             title="walknote"
@@ -37,9 +37,9 @@ const Works = () => (
           >
             Music recommendation app for iOS
           </WorkGridItem>
-        </Section>
+        </Section> */}
 
-        <Section delay={0.1}>
+        {/* <Section delay={0.1}>
           <WorkGridItem
             id="fourpainters"
             title="The four painters"
@@ -48,14 +48,14 @@ const Works = () => (
             A video work generated with deep learning, imitating famous four
             painters like Van Gogh
           </WorkGridItem>
-        </Section>
+        </Section> */}
 
-        <Section delay={0.1}>
+        {/* <Section delay={0.1}>
           <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
             An app that suggests ramen(noodle) shops based on a given photo of
             the ramen you want to eat
           </WorkGridItem>
-        </Section>
+        </Section> */}
         
       </SimpleGrid>
 
@@ -90,7 +90,7 @@ const Works = () => (
         </Section>
       </SimpleGrid>
 
-      <Section delay={0.4}>
+      {/* <Section delay={0.4}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
@@ -119,7 +119,8 @@ const Works = () => (
             Windows
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
+      </SimpleGrid> */}
+
     </Container>
   </Layout>
 )
