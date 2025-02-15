@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbLAV from '../public/images/works/lavaporwholesale_eyecatch.jpg'
 import thumbAERO from '../public/images/works/aerowerkz_eyecatch.png'
+import thumbREV from '../public/images/works/revauto_eyecatch.jpg'
 import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
 import thumbStyly from '../public/images/works/styly_eyecatch.png'
@@ -20,13 +21,19 @@ const Works = () => (
 
         <Section>
           <WorkGridItem id="lav" title="LA Vapor Wholesale" thumbnail={thumbLAV}>
-            A wholesale ecommerce website powered by Shopify.
+            A wholesale B2B ecommerce website powered by Shopify
           </WorkGridItem>
         </Section>
 
         <Section>
           <WorkGridItem id="aerowerkz" title="AeroWerkZ" thumbnail={thumbAERO}>
-            A portfolio showcasing various works and collaborations.
+            A portfolio showcasing various works and collaborations
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem id="rev" title="Rev Automotive" thumbnail={thumbREV}>
+            A B2C ecommerce website powered by Shopify
           </WorkGridItem>
         </Section>
 
@@ -60,15 +67,15 @@ const Works = () => (
         
       </SimpleGrid>
 
-      <Section delay={0.2}>
+      {/* <Section delay={0.2}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
           Collaborations
         </Heading>
-      </Section>
+      </Section> */}
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="Margelo">
             A website of the elite app development and contracting agency based
@@ -89,7 +96,7 @@ const Works = () => (
             A VR Creative tools for fashion brands
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
+      </SimpleGrid> */}
 
       {/* <Section delay={0.4}>
         <Divider my={6} />
