@@ -4,15 +4,10 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbLAV from '../public/images/works/lavaporwholesale_eyecatch.jpg'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
+import thumbAERO from '../public/images/works/aerowerkz_eyecatch.png'
 import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
 import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -26,6 +21,12 @@ const Works = () => (
         <Section>
           <WorkGridItem id="lav" title="LA Vapor Wholesale" thumbnail={thumbLAV}>
             A wholesale ecommerce website powered by Shopify.
+          </WorkGridItem>
+        </Section>
+
+        <Section>
+          <WorkGridItem id="aerowerkz" title="AeroWerkZ" thumbnail={thumbAERO}>
+            A portfolio showcasing various works and collaborations.
           </WorkGridItem>
         </Section>
 
