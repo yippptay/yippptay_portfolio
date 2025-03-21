@@ -3,8 +3,7 @@ import {
   Badge,
   Link,
   List,
-  ListItem,
-  AspectRatio
+  ListItem
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
@@ -18,7 +17,7 @@ const Work = () => (
         LA Vapor Wholesale <Badge>2022-2024</Badge>
       </Title>
       <P>
-      LA Vapor is one of the nation's leading wholesale distributors of electronic cigarettes 
+      LA Vapor is one of the nation&apos;s leading wholesale distributors of electronic cigarettes 
       and vaporizers with top-tier products. We offer a vast variety of e-cigs, box mods, 
       vape kits, hardware, pod systems, and disposables. Additionally, we provide the latest 
       devices, accessories, alternatives, and vaping gear essentials to our clients.

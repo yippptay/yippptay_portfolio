@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -6,9 +6,6 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbLAV from '../public/images/works/lavaporwholesale_eyecatch.jpg'
 import thumbAERO from '../public/images/works/aerowerkz_eyecatch.png'
 import thumbREV from '../public/images/works/revauto_eyecatch.jpg'
-import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
