@@ -33,7 +33,7 @@ const Logo = () => {
           fontWeight="semibold"
           ml={3}
         >
-          Taylor Yip
+          yipman.dev
         </Text>
       </LogoBox>
 

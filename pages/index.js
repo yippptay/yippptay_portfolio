@@ -129,7 +129,7 @@ const Home = () => (
           <BioYear>
             2024
           </BioYear>
-          Currently looking for work
+          Currently working for <i>DeltaMedia</i> as a <b>Web Developer</b>
         </BioSection>
 
       </Section>
