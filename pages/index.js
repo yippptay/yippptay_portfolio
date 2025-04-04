@@ -7,7 +7,9 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue
+  useColorModeValue,
+  Text,
+  Flex
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -24,6 +26,7 @@ const Home = () => (
   <Layout>
     <Container>
       <Box
+        boxShadow="md"
         borderRadius="lg"
         mb={6}
         p={3}
@@ -35,12 +38,18 @@ const Home = () => (
       </Box>
 
       <Box display={{ md: 'flex' }}>
+
         <Box flexGrow={1}>
           <Heading as="h1" variant="page-title">
             Taylor Yip
           </Heading>
-          <p>Web &  Software Developer / Graphic Designer / Editor</p>
+
+          <Flex color='gray'>
+            <Text>Full-Stack Developer • Graphic Designer • Shopify Admin</Text>
+          </Flex>
+
         </Box>
+
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
@@ -69,7 +78,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Introduction
         </Heading>
         <Paragraph>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -77,20 +86,23 @@ const Home = () => (
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </Paragraph>
+
         <Box align="center" my={4}>
           <Button
+            boxShadow="lg"
             as={NextLink}
             href="/works"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="purple"
           >
-            My portfolio
+            Works
           </Button>
         </Box>
+
       </Section>
 
-      <Section delay={0.2}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
@@ -102,7 +114,7 @@ const Home = () => (
 
         <BioSection>
           <BioYear>2018</BioYear>
-          Worked at <i>AeroWerkz</i> as a <b>Detailer & Graphic Designer</b>
+          <b>Detailer & Graphic Designer</b> at <i>AeroWerkz</i>
         </BioSection>
 
         <BioSection>
@@ -112,24 +124,24 @@ const Home = () => (
 
         <BioSection>
           <BioYear>2021</BioYear>
-          Worked at <i>SunYin</i> as a <b>Shipping Supervisor</b>
+          <b>Shipping Supervisor</b> at <i>SunYin</i>
         </BioSection>
 
         <BioSection>
           <BioYear>2022</BioYear>
-          Worked at <i>Newegg</i> as a <b>RMA Repair Specialist</b>
+          <b>RMA Repair Specialist</b> at <i>Newegg</i>
         </BioSection>
 
         <BioSection>
           <BioYear>2022</BioYear>
-          Worked at <i>LA Vapor Wholesale</i> as a <b>Web & Software Developer and Shopify Admin</b>
+          <b>Web & App Developer and Shopify Admin</b> at <i>LA Vapor Wholesale</i>
         </BioSection>
 
         <BioSection>
           <BioYear>
-            2024
+            Curr.
           </BioYear>
-          Currently working for <i>DeltaMedia</i> as a <b>Web Developer</b>
+          <b>Web Developer</b> at <i>DeltaMedia</i>
         </BioSection>
 
       </Section>
@@ -147,7 +159,7 @@ const Home = () => (
                 colorScheme="purple"
                 leftIcon={<IoLogoGithub />}
               >
-                @yippptay
+                yippptay
               </Button>
             </Link>
           </ListItem>

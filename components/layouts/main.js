@@ -16,7 +16,7 @@ const Main = ({ children, router }) => {
       
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Taylor's homepage" />
+        <meta name="description" content="Homepage" />
         <meta name="author" content="Taylor Yip" />
         <meta name="author" content="yippptay" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -30,7 +30,7 @@ const Main = ({ children, router }) => {
         <meta name="og:title" content="Taylor Yip" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <title>Taylor Yip - Homepage</title>
+        <title>Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
