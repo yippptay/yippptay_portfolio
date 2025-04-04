@@ -27,7 +27,7 @@ import {
   
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://revautocarcare.com/">
+            <Link target="_blank" href="https://revautocarcare.com/">
             https://revautocarcare.com/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

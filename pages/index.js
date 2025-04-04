@@ -39,21 +39,8 @@ const Home = () => (
 
       <Box display={{ md: 'flex' }}>
 
-        <Box flexGrow={1}>
-          <Heading as="h1" variant="page-title">
-            Taylor Yip
-          </Heading>
-
-          <Flex color='gray'>
-            <Text>Full-Stack Developer • Graphic Designer • Shopify Admin</Text>
-          </Flex>
-
-        </Box>
-
         <Box
           flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
           textAlign="center"
         >
           <Box
@@ -74,9 +61,26 @@ const Home = () => (
             />
           </Box>
         </Box>
+
+        <Box
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+          mb={4}
+          ml={{ md: 6 }}
+        >
+          <Heading as="h1" variant="page-title">
+            Taylor Yip
+          </Heading>
+
+          <Flex color='gray'>
+            <Text>Full-Stack Developer • Graphic Designer • Shopify Admin</Text>
+          </Flex>
+
+        </Box>
+
       </Box>
 
-      <Section delay={0.1}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Introduction
         </Heading>
@@ -119,7 +123,7 @@ const Home = () => (
 
         <BioSection>
           <BioYear>2020</BioYear>
-          Completed General Assembly&apos;s <b>Software Engineering Immersive Course</b>
+          Graduated <i>General Assembly&apos;s</i> <b>Software Engineering Bootcamp</b>
         </BioSection>
 
         <BioSection>

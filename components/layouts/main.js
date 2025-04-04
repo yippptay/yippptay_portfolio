@@ -30,12 +30,12 @@ const Main = ({ children, router }) => {
         <meta name="og:title" content="Taylor Yip" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <title>Homepage</title>
+        <title>yipman.dev</title>
       </Head>
 
       <NavBar path={router.asPath} />
 
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="container.md" pt={20}>
         {/* <LazyVoxelDog /> */}
 
         {children}

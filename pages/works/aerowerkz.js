@@ -23,7 +23,7 @@ import {
   
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://www.aerowerkz.com/index.html">
+            <Link target="_blank" href="https://www.aerowerkz.com/index.html">
                 https://www.aerowerkz.com/index.html <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>

@@ -18,7 +18,11 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import { 
+  IoLogoGithub,
+  IoFolderOpen,
+  IoHome
+} from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -48,6 +52,7 @@ const Navbar = props => {
 
   return (
     <Box
+      boxShadow="md"
       position="fixed"
       as="nav"
       w="100%"
@@ -95,7 +100,7 @@ const Navbar = props => {
 
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/yippptay/yippptay_portfolio"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -121,11 +126,27 @@ const Navbar = props => {
               />
               <MenuList>
 
-                <MenuItem as={MenuLink} href="/">
-                  About
+                <MenuItem
+                  as={MenuLink}
+                  href="/"
+                  display="inline-flex"
+                  alignItems="center"
+                  style={{ gap: 4 }}
+                  pl={2}
+                >
+                <IoHome />
+                  Home
                 </MenuItem>
 
-                <MenuItem as={MenuLink} href="/works">
+                <MenuItem
+                  as={MenuLink}
+                  href="/works"
+                  display="inline-flex"
+                  alignItems="center"
+                  style={{ gap: 4 }}
+                  pl={2}
+                >
+                  < IoFolderOpen />
                   Works
                 </MenuItem>
                 
@@ -133,8 +154,14 @@ const Navbar = props => {
 
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/yippptay/yippptay_portfolio"
+                  target="_blank"
+                  display="inline-flex"
+                  alignItems="center"
+                  style={{ gap: 4 }}
+                  pl={2}
                 >
+                  <IoLogoGithub />
                   View Source
                 </MenuItem>
 
