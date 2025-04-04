@@ -14,7 +14,7 @@ import {
     <Layout title="AeroWerkZ">
       <Container>
         <Title>
-          Aerowerkz <Badge>2018-2022</Badge>
+          Aerowerkz <Badge variant='subtle' colorScheme='blue'>2018-2022</Badge>
         </Title>
         <P>
         Car detailing shop specializing in PPF , ceramic coatings, and vinyl wraps.

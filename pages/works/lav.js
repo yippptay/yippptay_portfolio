@@ -14,7 +14,7 @@ const Work = () => (
   <Layout title="LA Vapor Wholesale">
     <Container>
       <Title>
-        LA Vapor Wholesale <Badge>2022-2024</Badge>
+        LA Vapor Wholesale <Badge variant='subtle' colorScheme='blue'>2022-2024</Badge>
       </Title>
       <P>
       LA Vapor is one of the nation&apos;s leading wholesale distributors of electronic cigarettes 
