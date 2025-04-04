@@ -12,6 +12,7 @@ import {
   MenuItem,
   MenuList,
   MenuButton,
+  MenuDivider,
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -77,7 +78,12 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          
+          <LinkItem
+            href="/works"
+            path={path}
+            borderRadius="md"
+          >
             Works
           </LinkItem>
 
@@ -123,6 +129,8 @@ const Navbar = props => {
                   Works
                 </MenuItem>
                 
+                <MenuDivider />
+
                 <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
