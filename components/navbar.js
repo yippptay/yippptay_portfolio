@@ -1,5 +1,4 @@
 import React from 'react'
-import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -50,10 +49,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   )
 }
 
-// const MenuLink = forwardRef((props, ref) => (
-//   <Link ref={ref} as={NextLink} {...props} />
-// ))
-
 const Navbar = props => {
   const { path } = props
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -100,12 +95,6 @@ const Navbar = props => {
           >
             Works
           </LinkItem>
-
-          {/* <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
-
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
 
           <LinkItem
             target="_blank"
@@ -188,10 +177,6 @@ const Navbar = props => {
                   </DrawerBody>
 
                   <DrawerFooter>
-                    {/* <Button variant='outline' mr={3} onClick={onClose}>
-                      Cancel
-                    </Button>
-                    <Button colorScheme='blue'>Save</Button> */}
                   </DrawerFooter>
 
                 </DrawerContent>
