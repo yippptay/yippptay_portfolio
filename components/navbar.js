@@ -1,3 +1,4 @@
+import React from 'react'
 import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
@@ -5,23 +6,29 @@ import {
   Container,
   Box,
   Link,
-  Stack,
   Heading,
   Flex,
   Menu,
-  MenuItem,
-  MenuList,
   MenuButton,
-  MenuDivider,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Stack,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  VStack,
+  useDisclosure,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { 
   IoLogoGithub,
   IoFolderOpen,
-  IoHome
+  IoHome,
 } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -49,6 +56,8 @@ const MenuLink = forwardRef((props, ref) => (
 
 const Navbar = props => {
   const { path } = props
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const btnRef = React.useRef()
 
   return (
     <Box
@@ -118,54 +127,77 @@ const Navbar = props => {
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
+              
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
-                aria-label="Options"
+                onClick={onOpen}
               />
-              <MenuList>
 
-                <MenuItem
-                  as={MenuLink}
-                  href="/"
-                  display="inline-flex"
-                  alignItems="center"
-                  style={{ gap: 4 }}
-                  pl={2}
-                >
-                <IoHome />
-                  Home
-                </MenuItem>
+              <Drawer
+                isOpen={isOpen}
+                placement='right'
+                onClose={onClose}
+                finalFocusRef={btnRef}
+              >
+                <DrawerOverlay />
 
-                <MenuItem
-                  as={MenuLink}
-                  href="/works"
-                  display="inline-flex"
-                  alignItems="center"
-                  style={{ gap: 4 }}
-                  pl={2}
-                >
-                  < IoFolderOpen />
-                  Works
-                </MenuItem>
+                <DrawerContent>
+
+                  <DrawerCloseButton />
+                  <DrawerHeader>Where to?</DrawerHeader>
+
+                  <DrawerBody>
+
+                    <VStack
+                      spacing={0}
+                    >
+                      <LinkItem
+                        href="/"
+                        path={path}
+                        onClick={onClose}
+                        display="inline-flex"
+                        alignItems="center"
+                        fontSize='lg'
+                        borderRadius="md"
+                        style={{ gap: 4 }}
+                        w="100%"
+                      >
+                        <IoHome />
+                        About
+                      </LinkItem>
+
+                      <LinkItem
+                        href="/works"
+                        path={path}
+                        onClick={onClose}
+                        display="inline-flex"
+                        alignItems="center"
+                        fontSize='lg'
+                        borderRadius="md"
+                        style={{ gap: 4 }}
+                        w="100%"
+                      >
+                        <IoFolderOpen />
+                        Works
+                      </LinkItem>
+
+                    </VStack>
+
+                  </DrawerBody>
+
+                  <DrawerFooter>
+                    {/* <Button variant='outline' mr={3} onClick={onClose}>
+                      Cancel
+                    </Button>
+                    <Button colorScheme='blue'>Save</Button> */}
+                  </DrawerFooter>
+
+                </DrawerContent>
                 
-                <MenuDivider />
-
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/yippptay/yippptay_portfolio"
-                  target="_blank"
-                  display="inline-flex"
-                  alignItems="center"
-                  style={{ gap: 4 }}
-                  pl={2}
-                >
-                  <IoLogoGithub />
-                  View Source
-                </MenuItem>
-
-              </MenuList>
+              </Drawer>
+              
             </Menu>
           </Box>
         </Box>
