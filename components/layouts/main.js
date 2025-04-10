@@ -12,7 +12,15 @@ import Footer from '../footer'
 
 const Main = ({ children, router }) => {
   return (
-    <Box as="main" pb={8}>
+    <Box
+      as="main"
+      sx={{
+        '@media only screen and (max-width: 600px)': {
+          paddingBottom: '80px',
+        },
+      }}
+      pb={8}
+    >
       
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,7 +43,15 @@ const Main = ({ children, router }) => {
 
       <NavBar path={router.asPath} />
 
-      <Container maxW="container.md" pt={20}>
+      <Container
+        maxW="container.md"
+        sx={{
+          '@media only screen and (max-width: 600px)': {
+            paddingTop: '20px',
+          },
+        }}
+        pt={20}
+      >
         {/* <LazyVoxelDog /> */}
 
         {children}

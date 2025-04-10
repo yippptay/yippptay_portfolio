@@ -14,16 +14,12 @@ import {
   Stack,
   Drawer,
   DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
-  VStack,
+  HStack,
   useDisclosure,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
 import { 
   IoLogoGithub,
   IoFolderOpen,
@@ -62,6 +58,11 @@ const Navbar = props => {
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
+      sx={{
+        '@media only screen and (max-width: 600px)': {
+          bottom: '-1px',
+        },
+      }}
       zIndex={2}
       {...props}
     >
@@ -112,7 +113,6 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -126,29 +126,28 @@ const Navbar = props => {
 
               <Drawer
                 isOpen={isOpen}
-                placement='right'
+                placement='bottom'
                 onClose={onClose}
                 finalFocusRef={btnRef}
               >
                 <DrawerOverlay />
-
                 <DrawerContent>
+                  <DrawerBody
+                    bg="#2C323D"
+                  >
 
-                  <DrawerCloseButton />
-                  <DrawerHeader>Where to?</DrawerHeader>
-
-                  <DrawerBody>
-
-                    <VStack
+                    <HStack
                       spacing={0}
+                      gap={6}
                     >
                       <LinkItem
                         href="/"
                         path={path}
                         onClick={onClose}
-                        display="inline-flex"
+                        display="flex"
+                        flexDirection="column"
                         alignItems="center"
-                        fontSize='lg'
+                        fontSize='md'
                         borderRadius="md"
                         style={{ gap: 4 }}
                         w="100%"
@@ -161,9 +160,10 @@ const Navbar = props => {
                         href="/works"
                         path={path}
                         onClick={onClose}
-                        display="inline-flex"
+                        display="flex"
+                        flexDirection="column"
                         alignItems="center"
-                        fontSize='lg'
+                        fontSize='md'
                         borderRadius="md"
                         style={{ gap: 4 }}
                         w="100%"
@@ -172,17 +172,11 @@ const Navbar = props => {
                         Works
                       </LinkItem>
 
-                    </VStack>
+                    </HStack>
 
                   </DrawerBody>
-
-                  <DrawerFooter>
-                  </DrawerFooter>
-
                 </DrawerContent>
-                
               </Drawer>
-              
             </Menu>
           </Box>
         </Box>

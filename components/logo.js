@@ -31,6 +31,7 @@ const Logo = () => {
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily='Poppins'
           fontWeight="semibold"
+          fontSize='xl'
           ml={3}
         >
           yipman.dev
