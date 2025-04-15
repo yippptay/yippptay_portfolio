@@ -9,7 +9,8 @@ import {
   ListItem,
   useColorModeValue,
   Text,
-  Flex
+  Flex,
+  Highlight
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -68,6 +69,7 @@ const Home = () => (
           mb={4}
           ml={{ md: 6 }}
         >
+          
           <Heading as="h1" variant="page-title">
             Taylor Yip
           </Heading>
@@ -81,14 +83,16 @@ const Home = () => (
       </Box>
 
       <Section delay={0.3}>
+        
         <Heading as="h3" variant="section-title">
           Introduction
         </Heading>
+
         <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Hello! I specialize in creating seamless digital experiences that are both 
+          functional and visually compelling. With a strong foundation in front-end and 
+          back-end development, combined with a keen eye for design, I bridge the gap 
+          between code and creativity.
         </Paragraph>
 
         <Box align="center" my={4}>
@@ -110,11 +114,6 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-
-        <BioSection>
-          <BioYear>1998</BioYear>
-          Born in <i>Monterey Park, California</i>
-        </BioSection>
 
         <BioSection>
           <BioYear>2018</BioYear>

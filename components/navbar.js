@@ -93,7 +93,12 @@ const Navbar = props => {
             href="/works"
             path={path}
             borderRadius="md"
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
           >
+            <IoFolderOpen />
             Works
           </LinkItem>
 
@@ -120,7 +125,7 @@ const Navbar = props => {
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
+                variant="ghost"
                 onClick={onOpen}
               />
 
