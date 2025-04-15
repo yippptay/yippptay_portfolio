@@ -9,8 +9,7 @@ import {
   ListItem,
   useColorModeValue,
   Text,
-  Flex,
-  Highlight
+  Flex
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
