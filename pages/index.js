@@ -156,7 +156,7 @@ const Home = () => (
           justify="space-between"
         >
 
-          <Link href="https://github.com/yippptay" target="_blank">
+          {/* <Link href="https://github.com/yippptay" target="_blank">
             <Button
               variant="ghost"
               colorScheme="purple"
@@ -164,7 +164,7 @@ const Home = () => (
             >
               yippptay
             </Button>
-          </Link>
+          </Link> */}
 
           <Link href="tel:+16262362595">
             <Button
