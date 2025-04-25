@@ -5,12 +5,11 @@ import {
   Heading,
   Box,
   Button,
-  List,
-  ListItem,
   useColorModeValue,
   Text,
-  Flex
+  Flex,
 } from '@chakra-ui/react'
+import { IoCall, IoMail } from "react-icons/io5"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -150,23 +149,46 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Contact
         </Heading>
-        <List>
 
-          <ListItem>
-            <Link href="https://github.com/yippptay" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="purple"
-                leftIcon={<IoLogoGithub />}
-              >
-                yippptay
-              </Button>
-            </Link>
-          </ListItem> 
+        <Flex
+          justify="space-between"
+        >
 
-        </List>
+          <Link href="https://github.com/yippptay" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="purple"
+              leftIcon={<IoLogoGithub />}
+            >
+              yippptay
+            </Button>
+          </Link>
+
+          <Link href="tel:+16262362595">
+            <Button
+              variant="ghost"
+              colorScheme="purple"
+              leftIcon={<IoCall />}
+            >
+              (626)-236-2595
+            </Button>
+          </Link>
+
+          <Link
+            href="mailto:yippptay@gmail.com"
+          >
+            <Button
+              variant="ghost"
+              colorScheme="purple"
+              leftIcon={<IoMail />}
+            >
+              yippptay@gmail.com
+            </Button>
+          </Link>
+
+        </Flex>
 
         {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
