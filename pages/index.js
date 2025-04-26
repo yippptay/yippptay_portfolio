@@ -9,6 +9,8 @@ import {
   Text,
   Flex,
 } from '@chakra-ui/react'
+import PhoneContact from '../components/phone-contact'
+import EmailContact from '../components/email-contact'
 import { IoCall, IoMail } from "react-icons/io5"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -166,29 +168,10 @@ const Home = () => (
             </Button>
           </Link> */}
 
-          <Link href="tel:+16262362595">
-            <Button
-              variant="ghost"
-              colorScheme="purple"
-              leftIcon={<IoCall />}
-            >
-              (626)-236-2595
-            </Button>
-          </Link>
-
-          <Link
-            href="mailto:yippptay@gmail.com"
-          >
-            <Button
-              variant="ghost"
-              colorScheme="purple"
-              leftIcon={<IoMail />}
-            >
-              yippptay@gmail.com
-            </Button>
-          </Link>
-
         </Flex>
+
+        <PhoneContact />
+        <EmailContact />
 
         {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
