@@ -7,7 +7,6 @@ import {
 import { IoCall, IoClipboard } from "react-icons/io5"
 
 const PhoneContact = () => {
-    const placeholder = 'text to be copied...'
     const { onCopy, hasCopied } = useClipboard('+16262362595')
 
     return (

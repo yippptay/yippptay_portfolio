@@ -11,7 +11,6 @@ import {
 } from '@chakra-ui/react'
 import PhoneContact from '../components/phone-contact'
 import EmailContact from '../components/email-contact'
-import { IoCall, IoMail } from "react-icons/io5"
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'

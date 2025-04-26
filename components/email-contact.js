@@ -7,7 +7,6 @@ import {
 import { IoMail, IoClipboard } from "react-icons/io5"
 
 const EmailContact = () => {
-    const placeholder = 'text to be copied...'
     const { onCopy, hasCopied } = useClipboard('yippptay@gmail.com')
 
     return (
@@ -18,11 +17,11 @@ const EmailContact = () => {
             >
                 <Link href="mailto:yippptay@gmail.com">
                     <Button
-                    variant="ghost"
-                    colorScheme="purple"
-                    leftIcon={<IoMail />}
+                        variant="ghost"
+                        colorScheme="purple"
+                        leftIcon={<IoMail />}
                     >
-                    yippptay@gmail.com
+                        yippptay@gmail.com
                     </Button>
                 </Link>
                 <Button variant="ghost" onClick={onCopy}>{hasCopied ? 'Copied!' : <IoClipboard/>}</Button>
