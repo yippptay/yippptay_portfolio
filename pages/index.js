@@ -8,9 +8,11 @@ import {
   Text,
   Flex,
 } from '@chakra-ui/react'
+import { 
+  IoFolderOpen,
+} from 'react-icons/io5'
 import PhoneContact from '../components/phone-contact'
 import EmailContact from '../components/email-contact'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -99,7 +101,7 @@ const Home = () => (
             as={NextLink}
             href="/works"
             scroll={false}
-            rightIcon={<ChevronRightIcon />}
+            leftIcon={<IoFolderOpen/>}
             colorScheme="purple"
           >
             Works

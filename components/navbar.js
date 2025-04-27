@@ -8,7 +8,6 @@ import {
   Heading,
   Flex,
   Menu,
-  MenuButton,
   IconButton,
   useColorModeValue,
   Stack,
@@ -35,7 +34,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
-      bg={active ? 'grassTeal' : undefined}
+      bg={active ? 'purple.200' : undefined}
       color={active ? '#202023' : inactiveColor}
       target={target}
       {...props}
@@ -58,11 +57,7 @@ const Navbar = props => {
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
-      sx={{
-        '@media only screen and (max-width: 600px)': {
-          bottom: '-1px',
-        },
-      }}
+      bottom={{ base: '-1px' , sm: 'auto'}}
       zIndex={2}
       {...props}
     >
@@ -122,10 +117,9 @@ const Navbar = props => {
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               
-              <MenuButton
-                as={IconButton}
+              <IconButton
+                aria-label='Menu'
                 icon={<HamburgerIcon />}
-                variant="ghost"
                 onClick={onOpen}
               />
 

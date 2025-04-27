@@ -1,13 +1,29 @@
 import { 
     useClipboard,
+    useToast,
     Flex,
     Link,
     Button,
+    Icon,
 } from '@chakra-ui/react'
-import { IoMail, IoClipboard } from "react-icons/io5"
+import { IoMail } from "react-icons/io5"
+import { BsClipboard2CheckFill, BsClipboard2Fill } from "react-icons/bs";
 
 const EmailContact = () => {
-    const { onCopy, hasCopied } = useClipboard('yippptay@gmail.com')
+    
+    const { onCopy, hasCopied } = useClipboard('yippptay@gmail.com');
+    const toast = useToast({
+        title: 'Copied email to clipboard',
+        duration: 1500,
+        colorScheme: 'purple',
+        isClosable: true,
+        position: 'top',
+        containerStyle: {
+            '@media only screen and (max-width: 600px)': {
+                width: '96vw',
+            },
+        },
+    });
 
     return (
         <>
@@ -24,7 +40,10 @@ const EmailContact = () => {
                         yippptay@gmail.com
                     </Button>
                 </Link>
-                <Button variant="ghost" onClick={onCopy}>{hasCopied ? 'Copied!' : <IoClipboard/>}</Button>
+                <Button
+                    variant="ghost"
+                    onClick={function(event){ onCopy(); toast()}}>{hasCopied ? <Icon as={BsClipboard2CheckFill} color='purple.200'/> : <Icon as={BsClipboard2Fill} color='purple.200'/>}
+                </Button>
             </Flex>
 
         </>

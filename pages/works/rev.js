@@ -14,7 +14,7 @@ import {
     <Layout title="Rev Automotive">
       <Container>
         <Title>
-          Rev Automotive <Badge variant='subtle' colorScheme='blue'>XXXX-XXXX</Badge>
+          Rev Automotive <Badge variant='subtle' colorScheme='blue'>2014-2018</Badge>
         </Title>
         <P>
             Rev Auto Car Care is a manufacturer of premium car care products. Over the years, 
