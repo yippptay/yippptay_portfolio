@@ -42,7 +42,7 @@ const PhoneContact = () => {
                 </Link>
                 <Button
                     variant="ghost"
-                    onClick={function(event){ onCopy(); toast()}}>{hasCopied ? <Icon as={BsClipboard2CheckFill} color='purple.200'/> : <Icon as={BsClipboard2Fill} color='purple.200'/>}
+                    onClick={function(){onCopy(); toast()}}>{hasCopied ? <Icon as={BsClipboard2CheckFill} color='purple.200'/> : <Icon as={BsClipboard2Fill} color='purple.200'/>}
                 </Button>
             </Flex>
 
