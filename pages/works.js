@@ -32,11 +32,11 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
-        <Section>
+        {/* <Section>
           <WorkGridItem id="rev" title="Rev Automotive" thumbnail={thumbREV}>
             A B2C ecommerce website powered by Shopify
           </WorkGridItem>
-        </Section>
+        </Section> */}
 
         {/* <Section>
           <WorkGridItem

@@ -17,10 +17,9 @@ const Work = () => (
         LA Vapor Wholesale <Badge variant='subtle' colorScheme='blue'>2022-2024</Badge>
       </Title>
       <P>
-      LA Vapor is one of the nation&apos;s leading wholesale distributors of electronic cigarettes 
-      and vaporizers with top-tier products. We offer a vast variety of e-cigs, box mods, 
-      vape kits, hardware, pod systems, and disposables. Additionally, we provide the latest 
-      devices, accessories, alternatives, and vaping gear essentials to our clients.
+        A B2B Shopify Plus storefront built with Liquid, Node.js, Ngrok, and GraphQL.
+        Integrated Acumatica ERP for automated product sync and pricing, cutting manual processing, and improved page load times.
+        Added dropshipping automation via Duoplane and custom REST/GraphQL integrations for real-time inventory and payment gateways.
       </P>
       <List ml={4} my={4}>
 

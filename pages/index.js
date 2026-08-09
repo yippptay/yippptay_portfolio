@@ -75,7 +75,7 @@ const Home = () => (
           </Heading>
 
           <Flex color='gray'>
-            <Text>Full-Stack Developer • Graphic Designer • Shopify Admin</Text>
+            <Text>Full-Stack Developer • Shopify Specialist</Text>
           </Flex>
 
         </Box>
@@ -89,10 +89,10 @@ const Home = () => (
         </Heading>
 
         <Paragraph>
-          Hello! I specialize in creating seamless digital experiences that are both 
-          functional and visually compelling. With a strong foundation in front-end and 
-          back-end development, combined with a keen eye for design, I bridge the gap 
-          between code and creativity.
+          Full-Stack Developer and E-Commerce Specialist with 5+ years of experience building scalable web applications, Shopify storefronts, and digital products across startup and agency environments.
+          Proficient across the full stack, including React, Node.js, Liquid, and REST/GraphQL APIs, with strong UX/UI and graphic design skills.
+          Experienced managing the full e-commerce lifecycle: development, marketing, inventory, fulfillment, and customer service.
+          Consistently delivers measurable gains in performance, SEO, and conversion.
         </Paragraph>
 
         <Box align="center" my={4}>
@@ -116,35 +116,42 @@ const Home = () => (
         </Heading>
 
         <BioSection>
-          <BioYear>2018</BioYear>
-          <b>Detailer & Graphic Designer</b> at <i>AeroWerkz</i>
-        </BioSection>
-
-        <BioSection>
-          <BioYear>2020</BioYear>
-          Graduated <i>General Assembly&apos;s</i> <b>Software Engineering Bootcamp</b>
-        </BioSection>
-
-        <BioSection>
-          <BioYear>2021</BioYear>
-          <b>Shipping Supervisor</b> at <i>SunYin</i>
-        </BioSection>
-
-        <BioSection>
-          <BioYear>2022</BioYear>
-          <b>RMA Repair Specialist</b> at <i>Newegg</i>
-        </BioSection>
-
-        <BioSection>
-          <BioYear>2022</BioYear>
-          <b>Web & App Developer and Shopify Admin</b> at <i>LA Vapor Wholesale</i>
+          <BioYear>
+            Curr.
+          </BioYear>
+          <b>E-Commerce Developer & Operations</b> at <i>DeltaMedia</i> (Contract, Part-Time)
         </BioSection>
 
         <BioSection>
           <BioYear>
-            Curr.
+            2025
           </BioYear>
-          <b>Web Developer</b> at <i>DeltaMedia</i>
+          <b>Senior Shopify Developer</b> at <i>Coverland</i>, architected a custom Dawn theme replacing a headless frontend for a 71,000+ SKU catalog
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2022</BioYear>
+          <b>Full-Stack Shopify Developer & Administrator</b> at <i>LA Vapor Wholesale</i>, built a B2B Shopify Plus storefront, integrated ERP, app development, and dropshipping automation
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2022</BioYear>
+          <b>RMA Repair Technician</b> at <i>Newegg (ENIAC)</i>, hardware diagnostics and repair at high throughput
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2021</BioYear>
+          <b>Shipping Supervisor</b> at <i>SunYin USA</i>, managed EDI transactions and logistics for major retail accounts during a transition period
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Graduated <i>General Assembly&apos;s</i> <b>Software Engineering Certificate</b>
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2018</BioYear>
+          <b>Web Developer, Graphic Designer & Auto Detailer</b> at <i>AeroWerkz</i>, built and SEO-optimized the company site, designed brand identity assets
         </BioSection>
 
       </Section>
@@ -170,7 +177,7 @@ const Home = () => (
 
         </Flex>
 
-        <PhoneContact />
+        {/* <PhoneContact /> */}
         <EmailContact />
 
         {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>

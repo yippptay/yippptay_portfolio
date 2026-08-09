@@ -17,7 +17,7 @@ import {
           Aerowerkz <Badge variant='subtle' colorScheme='blue'>2018-2022</Badge>
         </Title>
         <P>
-        Car detailing shop specializing in PPF , ceramic coatings, and vinyl wraps.
+          A responsive, SEO-optimized WordPress site built alongside a full brand identity package: logos, vehicle wrap designs, and social media graphics, designed in Photoshop and Illustrator.
         </P>
         <List ml={4} my={4}>
   
