@@ -9,7 +9,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbLAV from '../public/images/works/lavaporwholesale_eyecatch.jpg'
 import thumbAERO from '../public/images/works/aerowerkz_eyecatch.png'
-import thumbREV from '../public/images/works/revauto_eyecatch.jpg'
+// import thumbREV from '../public/images/works/revauto_eyecatch.jpg'
 
 const Works = () => (
   <Layout title="Works">

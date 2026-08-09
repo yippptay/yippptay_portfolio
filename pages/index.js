@@ -11,7 +11,7 @@ import {
 import { 
   IoFolderOpen,
 } from 'react-icons/io5'
-import PhoneContact from '../components/phone-contact'
+// import PhoneContact from '../components/phone-contact'
 import EmailContact from '../components/email-contact'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
