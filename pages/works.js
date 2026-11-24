@@ -9,7 +9,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbLAV from '../public/images/works/lavaporwholesale_eyecatch.jpg'
 import thumbAERO from '../public/images/works/aerowerkz_eyecatch.png'
-// import thumbREV from '../public/images/works/revauto_eyecatch.jpg'
+import thumbCOVER from '../public/images/works/coverland_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -19,6 +19,12 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+
+        <Section>
+          <WorkGridItem id="coverland" title="Coverland" thumbnail={thumbCOVER}>
+            A B2C ecommerce website powered by Shopify
+          </WorkGridItem>
+        </Section>
 
         <Section>
           <WorkGridItem id="lav" title="LA Vapor Wholesale" thumbnail={thumbLAV}>
@@ -31,12 +37,6 @@ const Works = () => (
             A portfolio showcasing various works and collaborations
           </WorkGridItem>
         </Section>
-
-        {/* <Section>
-          <WorkGridItem id="rev" title="Rev Automotive" thumbnail={thumbREV}>
-            A B2C ecommerce website powered by Shopify
-          </WorkGridItem>
-        </Section> */}
 
         {/* <Section>
           <WorkGridItem
