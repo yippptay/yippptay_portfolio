@@ -22,19 +22,19 @@ const Works = () => (
 
         <Section>
           <WorkGridItem id="coverland" title="Coverland" thumbnail={thumbCOVER}>
-            A B2C ecommerce website powered by Shopify
+            Native Shopify Plus migration of a 71,000+ SKU automotive catalog
           </WorkGridItem>
         </Section>
 
         <Section>
           <WorkGridItem id="lav" title="LA Vapor Wholesale" thumbnail={thumbLAV}>
-            A wholesale B2B ecommerce website powered by Shopify
+            Wholesale Shopify Plus store with custom apps, ERP integration, and inventory sync
           </WorkGridItem>
         </Section>
 
         <Section>
           <WorkGridItem id="aerowerkz" title="AeroWerkZ" thumbnail={thumbAERO}>
-            A portfolio showcasing various works and collaborations
+            WordPress site and brand identity for an auto detailing business
           </WorkGridItem>
         </Section>
 
