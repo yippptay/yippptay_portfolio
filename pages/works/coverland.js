@@ -17,7 +17,7 @@ import {
           Coverland <Badge variant='subtle' colorScheme='blue'>2025-2026</Badge>
         </Title>
         <P>
-          Led a headless Next.js/React to native Shopify Plus (Dawn) migration for a 71,000+ SKU automotive catalog, replacing third-party infrastructure with a custom Liquid and ES6+ theme and keeping variant and catalog data accurate across collections.
+          Led the migration of Coverland's automotive catalog, 71,000+ SKUs, from a headless Shopify (Hydrogen) storefront to a native Shopify Plus theme built on Dawn, with custom Liquid and JavaScript. Variant and catalog data stayed accurate across collections, and shoppers find compatible products with a vehicle (year, make, model) selector.
         </P>
         <List ml={4} my={4}>
   
@@ -35,12 +35,12 @@ import {
   
           <ListItem>
             <Meta>Technologies</Meta>
-            <span>Hydrogen(Headless Shopify), Supabase</span>
+            <span>Shopify Plus (Dawn), Hydrogen (headless Shopify), Supabase</span>
           </ListItem>
   
           <ListItem>
             <Meta>Languages</Meta>
-            <span>React, Liquid, JavaScript, TypeScript, PostgreSQL</span>
+            <span>Liquid, JavaScript, TypeScript, React, PostgreSQL</span>
           </ListItem>
   
           {/* <ListItem>

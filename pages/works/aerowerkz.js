@@ -17,7 +17,7 @@ import {
           Aerowerkz <Badge variant='subtle' colorScheme='blue'>2018-2022</Badge>
         </Title>
         <P>
-          A responsive, SEO-optimized WordPress site built alongside a full brand identity package: logos, vehicle wrap designs, and social media graphics, designed in Photoshop and Illustrator.
+          Designed and built a responsive, SEO-optimized WordPress site for an automotive detailing business, plus a brand identity package: logos, vehicle wrap designs, banners, and social media graphics made in Photoshop and Illustrator.
         </P>
         <List ml={4} my={4}>
   
@@ -35,7 +35,7 @@ import {
   
           <ListItem>
             <Meta>Technologies</Meta>
-            <span>Wordpress</span>
+            <span>WordPress, Google Analytics, Adobe Photoshop, Illustrator</span>
           </ListItem>
   
           <ListItem>

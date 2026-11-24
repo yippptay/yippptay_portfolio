@@ -17,9 +17,7 @@ const Work = () => (
         LA Vapor Wholesale <Badge variant='subtle' colorScheme='blue'>2022-2024</Badge>
       </Title>
       <P>
-        A B2B Shopify Plus storefront built with Liquid, Node.js, Ngrok, and GraphQL.
-        Integrated Acumatica ERP for automated product sync and pricing, cutting manual processing, and improved page load times.
-        Added dropshipping automation via Duoplane and custom REST/GraphQL integrations for real-time inventory and payment gateways.
+        Built and administered a B2B wholesale storefront on Shopify Plus using Liquid, React, and Node.js. Custom apps and API integrations keep inventory, orders, and pricing in sync with an Acumatica ERP and connect payment gateways and dropshipping automation.
       </P>
       <List ml={4} my={4}>
 
@@ -37,12 +35,12 @@ const Work = () => (
 
         <ListItem>
           <Meta>Technologies</Meta>
-          <span>Shopify, Shopify Admin, Shopify CLI</span>
+          <span>Shopify Plus, Shopify CLI, Acumatica ERP, Duoplane, Stripe</span>
         </ListItem>
 
         <ListItem>
           <Meta>Languages</Meta>
-          <span>Liquid HTML, HTML, CSS, JavaScript, GraphQL, Shopify API</span>
+          <span>Liquid, JavaScript, React, Node.js, GraphQL</span>
         </ListItem>
 
         {/* <ListItem>
